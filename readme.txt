@@ -2,7 +2,7 @@
 Contributors: James Lao
 Donate link: http://jameslao.com/
 Tags: related, posts, widget
-Requires at least: 2.9
+Requires at least: 2.8
 Tested up to: 2.9
 Stable tag: 1.0
 
@@ -10,16 +10,17 @@ Adds a widget that shows posts related to the current post.
 
 == Description ==
 
-Category Posts Widget is a light widget designed to do one thing and do it well: display the most recent posts from a certain category.
+Related Posts Widget shows a list of posts with similar tags to the current post. The widget is only shown on single post pages. That is, it is only shown when `is_single()` returns `true`.
 
 Features:
 
-* Support for displaying thumbnail images via [Simple Post Thumbnails plugin](http://wordpress.org/extend/plugins/simple-post-thumbnails/).
-* Specify how many posts to show
-* Set which category the posts should come form
-* Designate how many of the widgets you need
-* Specify whether to make to the widget title a link to the category page
-* Optionally show the post excerpt
+* Support for displaying thumbnail images via WP 2.9's new post thumbnail feature.
+* Set how many posts to show.
+* Option to show the post excerpt and how long the excerpt should be.
+* Option to show the post date.
+* Option to show the comment count.
+* Option to make the widget title link to the category page.
+* Multiple widgets.
 
 == Installation ==
 
@@ -28,17 +29,12 @@ Features:
 3. Goto the Plugins section of the WordPress admin and activate the plugin.
 4. Goto the Widget tab of the Presentation section and configure the widget.
 
+== Screenshots ==
+
+1. The widget configuration dialog.
+
 == Changelog ==
 
-2.3
+1.0
 
-* Really tried to fix bug where wp_query global was getting over written by manually instantiating a WP_Query object
-
-2.1
-
-* Fixed bug where wp_query global was getting over written.
-
-2.0
-
-* Updated to use the WP 2.8 widget API.
-* Added support for [Simple Post Thumbnails plugin](http://wordpress.org/extend/plugins/simple-post-thumbnails/).
+* Initial release.
