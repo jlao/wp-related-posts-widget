@@ -54,7 +54,7 @@ function widget($args, $instance) {
 		$args=array(
 			'tag__in' => $tag_ids,
 			'post__not_in' => array($post->ID),
-			'showposts'=> $instance['num_posts'], // Number of related posts that will be shown.
+			'showposts'=> $instance['num'], // Number of related posts that will be shown.
 			'caller_get_posts'=>1
 			);
 		$my_query = new WP_Query($args);
