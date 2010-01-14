@@ -4,7 +4,7 @@ Donate link: http://jameslao.com/
 Tags: related, posts, widget
 Requires at least: 2.8
 Tested up to: 2.9
-Stable tag: 1.0
+Stable tag: 1.1
 
 Adds a widget that shows posts related to the current post.
 
